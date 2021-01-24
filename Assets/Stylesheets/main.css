@@ -1,0 +1,280 @@
+/*
+==================================
+CLEAR ALL HTML FORMAT
+==================================
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*
+==================================
+GRID
+==================================
+*/
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+body {
+    max-width: 960px;
+    margin: 1% 0;
+}
+
+section {
+    margin: 0 1%;
+}
+
+.col-1-3,
+.col-2-3 {
+    display: inline-block;
+    padding: 0 2%
+}
+.col-1-3 {
+    max-width: 33.33%;
+    vertical-align: middle;
+}
+
+.col-2-3 {
+    max-width: 66.66%;
+    vertical-align: top;
+}
+
+img {
+    height: 150px;
+    position: absolute;
+    border-radius: 40%;
+    opacity: 40%;
+    left: 75px;
+}
+
+footer {
+    margin: 5px 0;
+}
+
+/*
+==================================
+CUSTOM STYLES
+==================================
+*/
+body {
+    font: 100% "Helvetica Neue", Helvetica, sans-serif;
+    color: rgb(168, 188, 190);
+    background:rgb(207, 209, 197);
+    background: -webkit-radial-gradient( rgb(236, 238, 231), rgb(200, 200, 190));
+    background:        -moz-radial-gradient( rgb(236, 238, 231), rgb(200, 200, 190));
+    background:             radial-gradient( rgb(236, 238, 231), rgb(200, 200, 190));    
+}
+
+.title-desc-info {
+    background:rgb(114, 114, 114);
+    background: -webkit-linear-gradient(rgba(255, 255, 200, 0.233), rgb(182, 182, 182) 90%);
+    background:        -moz-linear-gradient(rgba(255, 255, 200, 0.233), rgb(182, 182, 182) 90%);
+    background:             linear-gradient(rgba(255, 255, 200, 0.233), rgb(182, 182, 182) 90%);
+    border-top: 2px solid rgb(211, 211, 160);
+    border-radius: 15px;
+}
+.ingred-dir {
+    padding-top: 20px;
+    padding-right: 0;
+}
+
+h1, 
+h5 {
+    color: rgb(187, 131, 57);
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 150%;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    border-right: 2px solid rgba(0, 0, 0, 0.4);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;    
+ 
+}
+
+/*
+TITLE AND LOGO
+*/
+#title-logo {
+    font-weight: 400;
+    font-family: Open 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    color:rgb(255, 156, 117) ;
+	letter-spacing: 0.35em;
+    vertical-align: top;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+	padding: 40px 0 0 0;
+}
+
+/*
+DESCRIPTION
+*/
+p.col-1-3{
+    font-size: 20px;
+    font-weight: 450;
+    color: rgb(92, 103, 133);
+    text-align: justify;
+    text-shadow: -1px 0 1px rgba(0, 0, 0, 0.24);
+    line-height: 27px;
+    letter-spacing: 0.1em;
+    border-radius: 10px;
+    border-right: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+
+/*
+INFORMATION STYLES
+*/
+div h5 {
+    font-size: 25px;
+    line-height: 200%;
+    text-align: center;
+    text-shadow: -3px -4px 2px rgba(0, 0, 0, 0.1);
+}
+
+div p {
+    font-size: 15px;
+    color: rgb(126, 141, 184);
+    font-weight: 350;
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: 2px;    
+    text-shadow: -1px 0 1px rgba(0, 0, 0, 0.397);    
+}
+
+/*
+=====================================
+INGREDIENTS TABLE
+=====================================
+*/
+table {
+	border-collapse: separate;
+    border-spacing: 1.5px 0.5px;    
+    background-color: rgba(172, 187, 197, 0.1);
+    font-size: 20px;
+    color: rgb(90, 69, 67);
+    font-weight: 400;    
+}
+
+.ingred-dir table {
+    padding-right: 10px;
+} 
+
+/*
+TABLE DATA
+*/
+td {
+	padding: 4px 4px;
+	vertical-align: middle;
+	border-radius: 10px;
+    box-shadow: 1px 0px 2px #0000002c;
+    text-align: center;
+    column-gap: 40px;
+    font-style: italic;
+}
+
+/*
+ADDING A COLOR FOR THE EVEN ROWS
+*/
+tbody tr:nth-child(even){
+    background: rgba(78, 90, 67, 0.1);	
+}
+
+/*
+=====================================
+DIRECTIONS - ORDERED LIST
+=====================================
+*/
+ol {
+    list-style-type:decimal-leading-zero;
+    list-style-position: inside;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: rgb(90, 69, 67);
+    text-align: left;
+    line-height: 50px;
+    letter-spacing: 3px;
+    padding-left: 20px;
+    border-top: 3px solid rgba(0, 0, 0, 0.4);
+    border-right: 4px double rgba(0, 0, 0, 0.4);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    text-shadow: -2px 0 4px rgba(0, 0, 0, 0.1);
+}
+
+/*
+=====================================
+FOOTER AND LINK
+=====================================
+*/
+/*
+QUERIES/ SEND MAIL
+*/
+footer {
+    font-family: "Haettenschweiler", 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+    color: rgb(33, 46, 30);
+    font-weight: 100;
+    padding-top: 10px;
+    letter-spacing: 1.5px;
+}
+
+/*
+SEND MAIL LINK BUTTON
+*/
+a:hover {
+	color: #5a7068;
+}
+
+a {
+	size: 20px;
+	font-weight: 400;
+	text-decoration: underline;
+    color: rgb(109, 128, 117);
+}
