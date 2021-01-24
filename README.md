@@ -13,3 +13,6 @@
 [__The HTML File__](TomatoSoup_recipe.html)| Open this file to run the site.
 [__The CSS File__](Assets/Stylesheets/main.css)| The stylesheet file.
 [__The Tomato Soup image__](Assets/Images/Tomato%20soup.jpg)| The soup image used in the HTML file.
+
+## Directions to use
+ Open the HTML file. 
