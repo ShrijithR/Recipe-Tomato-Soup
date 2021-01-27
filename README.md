@@ -1,6 +1,6 @@
 # Recipe-Tomato-Soup
 
-![Image of Website](https://i.imgur.com/afAjgX1m.png?1)    
+![Image of Website](https://i.imgur.com/heAfCAsm.png)    
 
 > Fresh Tomato Soup Recipe.
   
