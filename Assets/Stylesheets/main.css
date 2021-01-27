@@ -193,59 +193,96 @@ div p {
 INGREDIENTS TABLE
 =====================================
 */
-table {
+.ingred-dir.col-1-3 table {
 	border-collapse: separate;
     border-spacing: 1.5px 0.5px;    
     background-color: rgba(172, 187, 197, 0.1);
     font-size: 20px;
     color: rgb(90, 69, 67);
-    font-weight: 400;    
+    line-height: 150%;
 }
-
-.ingred-dir table {
+/*
+EXTRA PADDING TO CREATE GAP BETWEEN INGREDIENTS AND DIRECTIONS
+*/
+.ingred-dir.col-1-3 {
     padding-right: 10px;
 } 
 
 /*
 TABLE DATA
 */
-td {
+.ingred-dir.col-1-3 td {
 	padding: 4px 4px;
 	vertical-align: middle;
-	border-radius: 10px;
-    box-shadow: 1px 0px 2px #0000002c;
     text-align: center;
-    column-gap: 40px;
-    font-style: italic;
+    font-style: italic;    
+    border-radius: 5px;
 }
 
 /*
+EXCLUSIVE SHADOWS FOR THE SECOND COLUMN
+*/
+.ingred-dir.col-1-3 td.col-2 {
+    box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+/*
 ADDING A COLOR FOR THE EVEN ROWS
 */
-tbody tr:nth-child(even){
+.ingred-dir.col-1-3 tbody tr:nth-child(even){
     background: rgba(78, 90, 67, 0.1);	
 }
 
 /*
 =====================================
-DIRECTIONS - ORDERED LIST
+DIRECTIONS - TABLE
 =====================================
 */
-ol {
-    list-style-type:decimal-leading-zero;
-    list-style-position: inside;
+.ingred-dir.col-2-3 table {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
+    font-size: 25px;
     color: rgb(90, 69, 67);
-    text-align: left;
-    line-height: 50px;
-    letter-spacing: 3px;
-    padding-left: 20px;
-    border-top: 3px solid rgba(0, 0, 0, 0.4);
-    border-right: 4px double rgba(0, 0, 0, 0.4);
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-    text-shadow: -2px 0 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: -2px 0 3px rgba(0, 0, 0, 0.2);    
+    box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgb(90, 69, 67);
+}
+
+/*
+TABLE DATA
+*/
+.ingred-dir.col-2-3 td {
+	padding: 0 5px;
+    line-height: 300%;
+}
+
+/*
+BOLD AND SHADOW FOR STRONG TYPE ELEMENTS
+*/
+.ingred-dir.col-2-3 td strong {
+    font-weight: 700;
+    text-shadow: -2px 0 4px rgba(0, 0, 0, 0.3);    
+}
+
+/*
+ADDING A COLOR FOR THE ROWS
+*/
+.ingred-dir.col-2-3 td {
+    font-style: italic;
+    background: rgba(78, 90, 67, 0.1);	
+    background: -webkit-linear-gradient(to left, rgba(255, 255, 200, 0.133), rgb(78, 90, 67, 0.1) 50%);
+    background:    -moz-linear-gradient(to left, rgba(255, 255, 200, 0.133), rgb(78, 90, 67, 0.1) 50%);
+    background:         linear-gradient(to left, rgba(255, 255, 200, 0.133), rgb(78, 90, 67, 0.1) 50%);
+    box-shadow: -1px 1px 1px rgba(32, 32, 32, 0.1);
+    
+}
+
+.ingred-dir.col-2-3 td.first-col {
+    font-size: 29px;
+    font-style: normal;
+    text-align: left;    
+    background: rgba(202, 202, 165, 0.133);	
+    border-right: 1px solid rgba(0,0,0,0.1);
 }
 
 /*
@@ -269,7 +306,7 @@ footer {
 SEND MAIL LINK BUTTON
 */
 a:hover {
-	color: #5a7068;
+    color: #ffffff;
 }
 
 a {
